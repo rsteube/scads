@@ -28,7 +28,6 @@ difference() {
      }
      
      // motor cutout
-     // translate([140,20,7]){
      translate([140,13,7]){ 
           cube([50, 27, 8]);
           translate([0,10,-5]){
