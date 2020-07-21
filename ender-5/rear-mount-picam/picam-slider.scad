@@ -44,8 +44,8 @@ module picamslider(){
     translate([15,8.5,5.5]){
         cube([9+15, 8,2]);
     }
-   translate([15 +0.5,12.5,5.5]){
-        cylinder(r=4.5, r2=10, h=20, $fn=40);
+   translate([15 -0.5,12.5,5.5]){
+        cylinder(r=4.5, r2=9, h=20, $fn=40);
     }
     
     // cable socket
@@ -72,7 +72,7 @@ module bracket() {
          
                      
          // cable
-         translate([28.5-6,14,0]){
+         translate([28.5-4,14,0]){
             cube([44, 10, 16.5]);
          }
     }
