@@ -44,8 +44,10 @@ module picamslider(){
     translate([15,8.5,5.5]){
         cube([9+15, 8,2]);
     }
-   translate([15 -0.5,12.5,5.5]){
-        cylinder(r=4.5, r2=9, h=20, $fn=40);
+    rotate(a=[0,3,0]){
+        translate([15 + 1.5,12.5,5.5]){
+            cylinder(r=4.5, r2=9, h=20, $fn=40);
+        }
     }
     
     // cable socket
