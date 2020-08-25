@@ -1,8 +1,8 @@
 module cable_management(){
   translate([0,0,2]){
     difference(){
-      cube([7,2,3]);
-      translate([3.5, 2, -0.5]) rotate([90,0,0]) cylinder(r=2.5, h=2, $fn=20);
+      cube([10,4,4]);
+      translate([5, 4, -0.5]) rotate([90,0,0]) cylinder(r=3, h=4, $fn=20);
     }
   }
 }
@@ -102,9 +102,9 @@ difference(){
     translate([182.5,0,0]) psu();
 
     translate([0,5,0]) cable_management();
-    translate([0,20,0]) cable_management();
-    translate([89,5,0]) cable_management();
-    translate([182.5-16,5,0]) cable_management();
+    translate([0,25,0]) cable_management();
+    translate([87,5,0]) cable_management();
+    translate([178.5-16,5,0]) cable_management();
   }
   //translate([45,0,0]) cube([300,100,50]);
 }
