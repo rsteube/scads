@@ -10,15 +10,15 @@ module cable_management(){
 module buck_module(){
     translate([0,0,8]){
       difference(){
-        color([1,0,0]) cube([48, 25, 2]);
-        translate([48-6.5,2.5,0]) cylinder(r=1.5, h=2, $fn=10);
-        translate([6.5,25-2.5,0]) cylinder(r=1.5, h=2, $fn=10);
+        color([1,0,0]) cube([46.5, 21, 2]);
+        translate([46.5-6.5,2.5,0]) cylinder(r=1.5, h=2, $fn=10);
+        translate([9.5,21-2.5,0]) cylinder(r=1.5, h=2, $fn=10);
       }
     }
 }
 module buck_mount(){
-    translate([48-6.5,2.5,0]) mount();
-    translate([6.5,25-2.5,0]) mount();
+    translate([46.5-6.5,2.5,0]) mount();
+    translate([9.5,21-2.5,0]) mount();
 }
 
 module yyg2_module(){
@@ -61,8 +61,8 @@ module pi_mount(){
 module mount(){
   difference(){
     union(){
-      cylinder(r=4,h=7, $fn=20);
-      cylinder(r=3,h=8, $fn=20);
+      cylinder(r=4,h=6, $fn=20);
+      cylinder(r=3,h=7, $fn=20);
     }
     cylinder(r=1.325,h=8, $fn=20);
   }
@@ -83,16 +83,16 @@ difference(){
     difference(){
       cube([192.5, 79, 2]);
       translate([22.5+5,2+5,0]) cube([67-10,40-10,2]);
-      translate([46.5+5,50+5,0]) cube([43-10,21-10,2]);
-      translate([100+5,15+5,0]) cube([85-10,56-10,2]);
+      translate([41.5+5,52+5,0]) cube([46.5-10,21-10,2]);
+      translate([100+5,17+5,0]) cube([85-10,56-10,2]);
     }
 
     //translate([22.5,2,0]) yyg2_module();
     translate([22.5,2,0]) yyg2_mount();
-    //translate([40,50,0]) buck_module();
-    translate([40,50,0]) buck_mount();
-    //translate([100,15,0]) pi_module();
-    translate([100,15,0]) pi_mount();
+    //translate([41.5,52,0]) buck_module();
+    translate([41.5,52,0]) buck_mount();
+    //translate([100,17,0]) pi_module();
+    translate([100,17,0]) pi_mount();
     translate([32.5,0,0]) {
     difference(){
       psu();
@@ -102,7 +102,7 @@ difference(){
     translate([182.5,0,0]) psu();
 
     translate([0,5,0]) cable_management();
-    translate([0,30,0]) cable_management();
+    translate([0,20,0]) cable_management();
     translate([89,5,0]) cable_management();
     translate([182.5-16,5,0]) cable_management();
   }
