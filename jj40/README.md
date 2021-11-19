@@ -8,7 +8,7 @@ Salvaged a used [Motospeed CK61](http://www.motospeed.cc/index.php?ac=article&at
 
 ## TODO
 
-Holes of the top plate were a bit too small for my screws and i had to drill them a bit larger, so these need some adjustment.
+Holes of the top plate turned out a bit too small for my screws and i had to drill them a bit larger, so these need some adjustment.
 
 # Steps done
 
