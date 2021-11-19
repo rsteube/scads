@@ -12,7 +12,7 @@ Holes of the top plate turned out a bit too small for my screws and i had to dri
 
 # Steps done
 
-Used `planck` preset from [keyboard-layout-editor](http://www.keyboard-layout-editor.com/#/) with:
+Used `planck` preset from [keyboard-layout-editor](http://www.keyboard-layout-editor.com/#/):
 ```json
 [{a:7},"Tab","Q","W","E","R","T","Y","U","I","O","P","Back Space"],
 ["Esc","A","S","D","F","G","H","J","K","L",";","'"],
