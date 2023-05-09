@@ -28,4 +28,4 @@ module fp_008(housing) {
 	}
 }
 
-fp_008(5);
+fp_008(5.5);
